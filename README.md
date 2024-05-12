@@ -7,6 +7,7 @@ docker network create my-network
 2-Run containers and attach them to the created network:
 
 docker run --network my-network --name cont1 my-image
+
 docker run --network my-network --name cont2 my-other-image
 
 Now, containers cont1 and cont2 are in the same network and can communicate with each other.
